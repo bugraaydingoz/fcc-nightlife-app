@@ -24,7 +24,7 @@ class App extends Component {
       this.setState({
         isSearching: true
       })
-      fetch('http://localhost:4000/api/bars/search/' + term)
+      fetch('http://ba-nightlife-app.herokuapp.com/api/bars/search/' + term)
         .then(response => response.json())
         .then(json => {
           this.setState({
@@ -59,10 +59,10 @@ class App extends Component {
       <div className="navbar-item">
         <TwitterLogin
           className="button is-text no-text-decoration is-size-7 margin-top-minus-15"
-          loginUrl="http://localhost:4000/api/auth/twitter"
+          loginUrl="http://ba-nightlife-app.herokuapp.com/api/auth/twitter"
           onFailure={this.onFailed.bind(this)}
           onSuccess={this.onSuccess.bind(this)}
-          requestTokenUrl="http://localhost:4000/api/auth/twitter/reverse"
+          requestTokenUrl="http://ba-nightlife-app.herokuapp.com/api/auth/twitter/reverse"
         />
       </div>
     )

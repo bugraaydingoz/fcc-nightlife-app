@@ -13,7 +13,9 @@ class BarBox extends React.Component {
 
   componentWillMount() {
     fetch(
-      'http://localhost:4000/api/bars/' + this.props.bar.businessId + '/users/'
+      'http://ba-nightlife-app.herokuapp.com/api/bars/' +
+        this.props.bar.businessId +
+        '/users/'
     )
       .then(result => result.json())
       .then(json => {
@@ -59,7 +61,7 @@ class BarBox extends React.Component {
 
   handleOnClick() {
     if (this.props.isAuthenticated) {
-      fetch('http://localhost:4000/api/bars/mark', {
+      fetch('http://ba-nightlife-app.herokuapp.com/api/bars/mark', {
         method: 'post',
         headers: {
           Accept: 'application/json',

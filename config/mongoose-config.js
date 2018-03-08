@@ -1,3 +1,4 @@
 module.exports = {
-    connectionString: 'mongodb://localhost:27017/nightlife_app'
-};
+  connectionString:
+    'mongodb://bugra:bugra@ds261678.mlab.com:61678/ba_nightlife_app'
+}

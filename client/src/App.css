@@ -1,0 +1,65 @@
+html,
+body {
+  background-color: rgb(245, 245, 245) !important;
+}
+.header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer > a > p > svg {
+  color: red;
+}
+
+.fixed-size {
+  width: 70%;
+}
+
+.btn-twitter {
+  background-color: #4099ff;
+  color: white;
+}
+
+.btn-twitter > span > svg {
+  color: white !important;
+}
+
+.top-space {
+  margin-top: 15px;
+}
+
+.bottom-space {
+  margin-bottom: 30px;
+}
+
+.bottom-space-15px {
+  margin-bottom: 15px;
+}
+
+.blank-left-space {
+  width: 188px;
+}
+
+.no-text-decoration {
+  text-decoration: none !important;
+}
+
+.margin-top-minus-15 {
+  margin-top: -15px;
+}
+
+.width-73 {
+  width: 73px;
+}

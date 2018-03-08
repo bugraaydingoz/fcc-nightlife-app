@@ -1,0 +1,28 @@
+.search-bar {
+    width: auto;
+}
+
+.search-bar>input {
+    text-align: center;
+    box-shadow: none !important;
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1) !important;
+}
+
+.search-bar>input:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
+.no-shadow {
+    border-color: white !important;
+    box-shadow: none !important;
+}
+
+.space-bottom {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: auto !important;
+    }
+}
